@@ -16,7 +16,6 @@ data_donut <- data %>%
 data_donut$label_pos <- (data_donut$ymax + data_donut$ymin) /2
 
 
-
 data_donut %>%
   ggplot(aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3,
              fill = cat)) +
